@@ -28,4 +28,13 @@ nav {
 img {
 height: 20px;
 width: 20px;
+
+}
+.profile-pic{
+  margin-top: 10px;
+}
+div > p {
+  padding-left: 1.2vw;
+  display: inline-block;
+  color: black;
 }
