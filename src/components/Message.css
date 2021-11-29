@@ -1,0 +1,9 @@
+.message-area{
+    display: flex;
+    width: 60vw;
+    margin: 0 auto; 
+    height: 15vw;
+    background-color: black;
+    
+
+}

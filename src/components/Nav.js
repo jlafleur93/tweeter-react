@@ -9,10 +9,10 @@ export default function Nav(props) {
   return (
     <nav className="tweet-bar">
       <div className="profile-info">
-        <img className="profile-pic" src={profile} />
-        <p>{info}</p>
+        <img src={profile} />
+        {info}
       </div>
-      <span>tweeter</span>
+      <span className="catrr">catrr</span>
       <div className="write-tweet">
         <span>
           <strong>Create</strong> a new post.

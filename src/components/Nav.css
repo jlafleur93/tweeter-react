@@ -1,7 +1,6 @@
 nav {
   color: white;
   font-family: 'Bungee', sans-serif;
-  position: fixed;
   top: 0;
   z-index: 0;
   height: 40px;
@@ -30,11 +29,15 @@ height: 20px;
 width: 20px;
 
 }
-.profile-pic{
-  margin-top: 10px;
-}
-div > p {
-  padding-left: 1.2vw;
+.profile-info{
   display: inline-block;
-  color: black;
+  align-self: flex-end;
+}
+.write-tweet{
+  display: inline-block;
+  align-self: flex-end;
+}
+.catrr{
+  display: inline-block;
+  align-self: flex-end;
 }

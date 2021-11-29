@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Nav from "./components/Nav";
+import Message from "./components/Message"
 function App() {
   const userDets = {
     user: "Snoop Dog",
@@ -19,6 +20,7 @@ function App() {
   return (
     <body>
       <Nav info={userDets.user} />
+      <Message/>
     </body>
   );
 }
