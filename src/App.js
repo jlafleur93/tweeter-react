@@ -1,26 +1,20 @@
 import React from "react";
 import "./App.css";
 import Nav from "./components/Nav";
-import Message from "./components/Message"
+import Message from "./components/Message/Message";
 function App() {
   const userDets = {
     user: "Snoop Dog",
     totalPosts: "10",
-    posts: {
-      p01: {
-        id: 1,
-        message: "yeet",
-      },
-      p02: {
-        id: 2,
-        message: "same",
-      },
-    },
+    posts: [
+      { id: 1, message: "I love it", user: "blmpawpatrol" },
+      { id: 2, message: "same", user: "policedog" },
+    ],
   };
   return (
     <body>
       <Nav info={userDets.user} />
-      <Message/>
+      <Message posts={userDets.posts} />
     </body>
   );
 }
