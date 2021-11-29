@@ -1,6 +1,8 @@
 import "./Message.css";
 import React from "react";
 import profile from "../../assets/profile.svg";
+import share from "../../assets/share-button.svg";
+import cat from "../../assets/cat.svg";
 export default function Message(props) {
   const { posts } = props;
   const MessageMap = posts.map((x) => {
@@ -11,6 +13,11 @@ export default function Message(props) {
           <aside>{x.user}</aside>
         </div>
         <p>{x.message}</p>
+        <div className="cattr-social">
+          {x.created_at}
+          <img src={share} />
+          <img src={cat} className="cat-icon" />
+        </div>
       </ul>
     );
   });
