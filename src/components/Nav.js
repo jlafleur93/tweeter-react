@@ -9,7 +9,7 @@ export default function Nav(props) {
   return (
     <nav className="tweet-bar">
       <div className="profile-info">
-        <img src={profile} />
+        <img src={profile} alt="profile-pic" />
         {info}
       </div>
       <span className="catrr">catrr</span>
@@ -17,8 +17,8 @@ export default function Nav(props) {
         <span>
           <strong>Create</strong> a new post.
         </span>
-        <img src={plus} />
-        <img src={message} />
+        <img src={plus} alt="add-icon" />
+        <img src={message}  alt="users-messages"/>
         <div class="container"></div>
       </div>
     </nav>

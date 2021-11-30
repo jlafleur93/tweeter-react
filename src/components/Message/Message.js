@@ -9,14 +9,14 @@ export default function Message(props) {
     return (
       <ul className="message-area" key={x.id}>
         <div className="cattr-details">
-          <img className="user-profile" src={profile} />
-          <aside>{x.user}</aside>
+          <img className="user-profile" src={profile} alt="userprofile" />
+          <aside className="profile-name">{x.user}</aside>
         </div>
         <p>{x.message}</p>
         <div className="cattr-social">
-          {x.created_at}
-          <img src={share} />
-          <img src={cat} className="cat-icon" />
+          <p> {x.created_at} </p>
+          <img src={share} alt="share" />
+          <img src={cat} className="cat-icon" alt="cat-likes" />
         </div>
       </ul>
     );
