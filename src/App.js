@@ -10,7 +10,7 @@ function App() {
     posts: [
       {
         id: 1,
-        message: "I love it",
+        message: "I actually really love both paw patrol, and the police",
         user: "blmpawpatrol",
         created_at: 1461116232227,
       },
@@ -27,7 +27,7 @@ function App() {
       },
       {
         id: 4, 
-        message: "", 
+        message: "Crispy Bacon, Bacon, Bacon, I hate bacon, Im a vegan, vegan, veggies. lets go", 
         user: "Idea Jack",
         created_at: 123123519901,
       },
@@ -37,6 +37,18 @@ function App() {
         user: "James J Jameson",
         created_at: 123123519901,
       },
+      {
+      id:6,
+      message: "SpidermanSpiderman Lets go Spiderman", 
+      user: "Spidermans Spiderman", 
+      created_at:122123519901
+    },
+    {
+    id:7,
+    message:"Taco Taco", 
+    user: "i<3Trains", 
+    created_at:122123519901
+    },
     ],
   };
   return (

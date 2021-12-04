@@ -12,7 +12,7 @@ export default function Message(props) {
           <img className="user-profile" src={profile} alt="userprofile" />
           <aside className="profile-name">{x.user}</aside>
         </div>
-        <p>{x.message}</p>
+        <p className="user-message">{x.message}</p>
         <div className="cattr-social">
           <p> {x.created_at} </p>
           <img src={share} alt="share" />
