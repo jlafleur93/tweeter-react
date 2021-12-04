@@ -15,8 +15,12 @@ export default function Message(props) {
         <p className="user-message">{x.message}</p>
         <div className="cattr-social">
           <p> {x.created_at} </p>
-          <img src={share} alt="share" />
-          <img src={cat} className="cat-icon" alt="cat-likes" />
+          <div className="social-image">
+            <img src={share} alt="share" />
+          </div>
+          <div className="social-cat">
+            <img src={cat} className="cat-icon" alt="cat-likes" />
+          </div>
         </div>
       </ul>
     );
