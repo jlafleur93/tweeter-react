@@ -31,7 +31,7 @@ width: 20px;
 }
 .profile-info{
   display: inline-block;
-  align-self: flex-end;
+
 }
 .write-tweet{
   display: inline-block;
@@ -40,4 +40,5 @@ width: 20px;
 .catrr{
   display: inline-block;
   align-self: flex-end;
+  margin-left: 5rem;
 }

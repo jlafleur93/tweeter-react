@@ -3,6 +3,7 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Message from "./components/Message/Message";
 import Footer from "./components/Footer/Footer";
+import Popup from "./components/Popup/Popup";
 function App() {
   const userDets = {
     user: "Snoop Dog",
@@ -58,6 +59,7 @@ function App() {
     <body>
       <Nav info={userDets.user} />
       <Message posts={userDets.posts} />
+      <Popup />
       <Footer />
     </body>
   );
