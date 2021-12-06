@@ -5,7 +5,8 @@ import message from "../assets/message.svg";
 import profile from "../assets/profile.svg";
 
 export default function Nav(props) {
-  const { info } = props;
+  const { info, onClick } = props;
+
   return (
     <nav className="tweet-bar">
       <div className="profile-info">
@@ -15,10 +16,10 @@ export default function Nav(props) {
       <span className="catrr">catrr</span>
       <div className="write-tweet">
         <span>
-          <strong>Create</strong> a new post.
+          <strong onClick={onClick}>Create</strong> a new post.
         </span>
         <img src={plus} alt="add-icon" />
-        <img src={message}  alt="users-messages"/>
+        <img src={message} alt="users-messages" />
         <div class="container"></div>
       </div>
     </nav>

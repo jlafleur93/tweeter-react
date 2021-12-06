@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Nav from "./components/Nav";
 import Message from "./components/Message/Message";
 import Footer from "./components/Footer/Footer";
 import Popup from "./components/Popup/Popup";
 function App() {
+  const [isActive, setActive] = useState(false);
+  function clickHandle() {
+    console.log("hello");
+    console.log(isActive);
+    setActive(!isActive);
+  }
   const userDets = {
     user: "Snoop Dog",
     totalPosts: "10",
@@ -57,9 +63,9 @@ function App() {
   };
   return (
     <body>
-      <Nav info={userDets.user} />
+      <Nav info={userDets.user} onClick={() => clickHandle()} />
       <Message posts={userDets.posts} />
-      <Popup />
+      {isActive ? <Popup /> : null}
       <Footer />
     </body>
   );

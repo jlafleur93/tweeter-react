@@ -4,3 +4,9 @@
   width: 100vw;
   height: 20vh;
 }
+.post-area{
+  display: block;
+  width: 100vw;
+  height: 20vh;
+  background-color: black;
+}
