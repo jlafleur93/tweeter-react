@@ -7,8 +7,6 @@ import Popup from "./components/Popup/Popup";
 function App() {
   const [isActive, setActive] = useState(false);
   function clickHandle() {
-    console.log("hello");
-    console.log(isActive);
     setActive(!isActive);
   }
   const userDets = {
