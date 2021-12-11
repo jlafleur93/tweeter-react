@@ -10,7 +10,7 @@ function App() {
     setActive(!isActive);
   }
   const userDets = {
-    user: "Snoop Dog",
+
     totalPosts: "10",
     posts: [
       {
@@ -61,7 +61,7 @@ function App() {
   };
   return (
     <body>
-      <Nav info={userDets.user} onClick={() => clickHandle()} />
+      <Nav onClick={() => clickHandle()} />
       <Message posts={userDets.posts} />
       {isActive ? <Popup /> : null}
       <Footer />

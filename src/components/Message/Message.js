@@ -3,6 +3,7 @@ import React from "react";
 import profile from "../../assets/profile.svg";
 import share from "../../assets/share-button.svg";
 import cat from "../../assets/cat.svg";
+
 export default function Message(props) {
   const { posts } = props;
   const MessageMap = posts.map((x) => {
